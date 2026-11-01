@@ -24,69 +24,74 @@
       <p class="legal-kicker">EXPTRACKER · PRIVACY</p>
       <h1>Privacy Policy</h1>
       <p class="legal-updated">Effective date: November 1, 2026</p>
-      <p class="legal-intro">expTracker is a personal finance journal. Your records are stored on your device or in your browser. If you connect Google Drive, the app syncs a backup to that Google account’s private app-data area. Optional AI features send the content needed for your request to the AI provider you configure.</p>
+      <p class="legal-intro">This policy explains what expTracker collects, how it uses Google account and Drive data, where records are stored, and how you can remove them. expTracker is operated by the person or business identified in the Contact section below.</p>
 
       <div class="legal-content">
         <section>
-          <h2>1. Information in expTracker</h2>
-          <p>The app processes the information you enter, including income and expenses, balances and savings goals, diary entries, planned payments or purchases, calendar events, and reminder preferences.</p>
-          <p>When you sign in with Google, expTracker receives your Google account email and account identifier so it can associate your local records with the correct account and authorize Drive backup. Google handles sign-in and authorization under its own privacy terms.</p>
+          <h2>1. About expTracker and information it handles</h2>
+          <p>expTracker is a personal finance journal for tracking income, expenses, balances, savings goals, diary entries, planned purchases or payments, calendar events, and reminder settings. It processes the information you enter and the records created from your entries.</p>
+          <p>The app does not run an expTracker server that stores your finance records. The operator does not receive your records through an expTracker backend.</p>
         </section>
 
         <section>
-          <h2>2. Where your information is stored</h2>
+          <h2>2. Google account and Google Drive data</h2>
+          <h3>What Google data expTracker accesses</h3>
+          <p>When you sign in, expTracker receives your Google account email address and a Google account identifier. These identify the account associated with the local records and backup. To provide backup and restore, the app requests the <code>https://www.googleapis.com/auth/drive.appdata</code> scope. This permission lets expTracker access its own hidden app-data area in your Drive; expTracker does not request permission to browse your other Drive files.</p>
+          <h3>How expTracker uses Google data</h3>
+          <p>The email address and account identifier are used to show which account is connected and to keep each account’s records associated with that account on the device or browser. When you sync, expTracker searches for, creates, reads, or updates its backup in the private app-data area. The JSON backup can contain your balance and savings goal, income and expense records, diary entries, planned items, and calendar events.</p>
+          <p>Google account and Drive data are used only to provide sign-in and the backup or restore features you request. expTracker does not sell this data, use it for advertising or credit decisions, or use it to train generalized AI or machine-learning models.</p>
+          <h3>Who receives Google data</h3>
+          <p>Google processes sign-in and Drive requests as the service that provides those features. expTracker does not send Google account data to an expTracker server. If you explicitly request an AI feature, relevant app content may be sent directly from your device or browser to the AI provider you configured; see Section 4 for details. It is not sent to advertising networks or data brokers.</p>
+
+          <h2>3. Where records are stored and protected</h2>
           <h3>On your device or in your browser</h3>
-          <p>On Android and iOS, finance records are stored in an encrypted local database, with its key held in the operating system’s secure storage. In a supported web browser, finance records are encrypted in browser storage using Web Crypto. Data and saved settings remain tied to that device or browser; they are not automatically copied between devices unless you use Drive sync.</p>
+          <p>On Android and iOS, finance records are stored in an encrypted local database, with its encryption key held in the operating system’s secure storage. In a supported web browser, finance records are encrypted in browser storage using Web Crypto. Account connection details, such as the Google account identifier, email, and sync metadata, are stored locally on that device or browser. Records are not automatically copied between devices unless you use Drive sync.</p>
           <h3>Google Drive backup</h3>
-          <p>If you connect Google Drive, expTracker uses the limited <code>drive.appdata</code> permission to read and update its backup in Google Drive’s private app-data area. The backup is not shown as a regular file in Drive. It is sent over HTTPS as JSON; the app does not add end-to-end encryption to the Drive backup. Google’s own terms and privacy practices apply to its storage and processing.</p>
-          <p>Signing out does not delete a Drive backup. Use Google account access controls to revoke the app’s authorization. For help with a backup deletion request, contact the app operator below.</p>
+          <p>The backup is stored in Google Drive’s private app-data area and is not shown as a regular Drive file. It is transmitted over HTTPS as JSON. expTracker does not add end-to-end encryption to the Drive backup, so Google’s storage and security practices apply while it is in Drive.</p>
           <h3>Exported files</h3>
           <p>If you export a backup, expTracker creates a JSON file for you to save. The file is not encrypted by the app. Choose a secure place to store it. API keys are not included in exported backups.</p>
         </section>
 
         <section>
-          <h2>3. Optional AI features</h2>
-          <p>AI is optional. You choose a provider and enter its API key in expTracker. The key is stored in the phone’s secure storage or encrypted browser settings and is not included in Drive backups or exported files. It is sent directly from your app or browser to the provider when you request an AI feature; the app operator does not receive it through an expTracker server.</p>
+          <h2>4. Optional AI features and sharing</h2>
+          <p>AI is optional. You choose a provider and enter its API key in expTracker. The key is stored in the phone’s secure storage or encrypted browser settings and is not included in Drive backups or exported files. The key is sent directly from your app or browser to that provider when you request an AI feature; the operator does not receive it through an expTracker server.</p>
           <ul>
-            <li><strong>Diary analysis:</strong> the diary text you ask the app to analyze is sent to your selected provider to produce suggestions. You review suggestions before adding them to your finance records.</li>
-            <li><strong>AI assistant:</strong> your question and recent chat context are sent with relevant app context, such as recent transactions, diary excerpts, plans, upcoming events, balances, and savings totals.</li>
+            <li><strong>Diary analysis:</strong> the diary text you ask the app to analyze is sent to your selected provider to produce suggestions. You review suggestions before adding them to your records.</li>
+            <li><strong>AI assistant:</strong> when you send a message, your question and recent chat context are sent with relevant app context, such as recent transactions, diary excerpts, plans, upcoming events, balances, and savings totals.</li>
             <li><strong>Chat retention:</strong> chat messages are kept in memory during the current app session. expTracker does not save chat history to its finance database or Drive backup.</li>
           </ul>
-          <p>Your selected provider may process or retain requests under its own privacy policy and terms. Provider usage fees or limits may apply to your API key. Review the provider’s policies before enabling AI.</p>
-        </section>
-
-        <section>
-          <h2>4. How information is shared</h2>
-          <p>expTracker does not operate a separate server that stores your finance records. Information is sent to Google when you use Google sign-in or Drive sync, and to the AI provider you choose when you use an AI feature. The app does not sell your personal finance or diary records.</p>
+          <p>AI requests are sent only when you choose an AI feature; signing in or syncing Drive alone does not send records to an AI provider. The provider may process or retain requests under its own privacy policy, terms, and data-use settings. Review those terms before enabling AI, and choose settings that do not allow your prompts to be used to train generalized models. Provider usage fees or limits may apply.</p>
+          <p>Other than Google for sign-in and Drive backup, and the AI provider you select when you request AI, expTracker does not disclose your finance or diary records to third parties. The app does not sell those records.</p>
           <p>If this policy site is published using GitHub Pages, GitHub may process technical information, such as visitor IP addresses, for service security under its own policies.</p>
         </section>
 
         <section>
-          <h2>5. Your choices and deletion</h2>
-          <p>You can edit or remove entries in the app, export your data, and disconnect Google. Local records remain on your device or browser until you remove the app’s data or clear that browser’s site storage. Signing out of Google removes the connection from the app but does not remove the Drive backup.</p>
-          <p>You can revoke Google access through your Google Account settings. To ask the app operator for help with a Drive backup or a privacy question, use the contact details below.</p>
+          <h2>5. Retention and deletion</h2>
+          <p>Local finance records remain on your device until you delete them in the app, remove the app’s data, or uninstall the app. In a browser, they remain until you delete them in the app or clear the site’s browser storage. The connected account identifier, email, and sync metadata remain locally while the connection is saved; disconnecting Google removes that saved connection from the app.</p>
+          <p>A Drive backup remains in your Google account until it is deleted from the app-data area. Signing out or disconnecting the app does not delete that backup. You can revoke the app’s Google access in your Google Account and manage or delete its stored app data through Google’s Drive or account controls. If you need help locating the deletion controls, contact the operator below. AI providers may retain a request according to their own retention policies.</p>
+          <p>You may request help with privacy questions or deletion instructions using the contact details below. Because expTracker has no server copy of your finance records, the operator cannot directly erase the local data on your device or browser.</p>
         </section>
 
         <section>
           <h2>6. Security</h2>
-          <p>The app uses encrypted local storage on supported devices and browsers and HTTPS for network requests. No storage method or internet transmission can be guaranteed completely secure. Protect your device, browser profile, and AI provider key.</p>
+          <p>expTracker encrypts local finance storage on supported devices and browsers, keeps the mobile database key in operating-system secure storage, and uses HTTPS for Google and AI provider requests. The Drive backup itself is JSON and is not end-to-end encrypted by expTracker. No storage method or internet transmission can be guaranteed completely secure. Protect your device, browser profile, Google account, and AI provider key.</p>
         </section>
 
         <section>
-          <h2>7. Changes to this policy</h2>
-          <p>If the app’s data practices change, this policy will be updated before those changes take effect. The latest effective date will appear at the top of this page.</p>
+          <h2>7. Google API data-use commitment</h2>
+          <p>expTracker’s use and transfer of information received from Google APIs complies with the Google API Services User Data Policy, including its Limited Use requirements. Google user data is used only to provide the sign-in, backup, and restore features described in this policy. It is not sold, used for advertising or credit decisions, or used by expTracker to train generalized AI or machine-learning models.</p>
         </section>
 
         <section id="contact" class="contact-card">
-          <h2>8. Contact</h2>
-          <p>App operator: <strong>[Add your name or business name]</strong><br>Privacy and support email: <strong>[Replace with your support email before publishing]</strong></p>
+          <h2>8. Changes and contact</h2>
+          <p>If data practices change, this policy will be updated and the effective date above will change. For privacy questions, deletion instructions, or support, contact the app operator:<br><strong>Siddharth</strong><br>Email: <a href="mailto:sidkk1604@gmail.com">sidkk1604@gmail.com</a></p>
         </section>
       </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <div class="footer-copy">© 2026 expTracker · Operated by <strong>[Add your name or business name]</strong></div>
+        <div class="footer-copy">© 2026 expTracker · Operated by <strong>Siddharth</strong></div>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="./">Home</a>
           <a href="./privacy.html" aria-current="page">Privacy policy</a>
